@@ -1,0 +1,13 @@
+html 
+    head 
+        title ="restaurante gus"
+        link(rel="stylesheet" href="../style.css")
+        body 
+        h1="menu de comidas"
+        ul 
+            each comida in arregloDeComida
+                li
+                    div(class="contenedor-comida")
+                        p=comida.name
+                        P=comida.price 
+                    h2="fin del menu"
